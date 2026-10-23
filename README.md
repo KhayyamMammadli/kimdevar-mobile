@@ -16,7 +16,19 @@ npm run tunnel
 
 ### Expo Go uyğunluğu
 
-Bu pilot fiziki iPhone-dakı App Store Expo Go ilə uyğunluq üçün **Expo SDK 54 / React Native 0.81 / React 19.1** istifadə edir. Android-də lazım gələrsə https://expo.dev/go səhifəsindən SDK 54 uyğun Expo Go quraşdır. SDK-nı təkcə `expo` versiyasını dəyişərək yüksəltmə; native paketləri də uyğunlaşdırmaq lazımdır. Gələcək store buraxılışı üçün ayrıca SDK/build yenilənməsi və development build lazımdır.
+Bu pilot telefonda göstərilən Expo Go versiyasına uyğun **Expo SDK 57 / React Native 0.86 / React 19.2** istifadə edir. Expo Go və layihənin SDK versiyası eyni olmalıdır. Android və iOS üçün SDK 57 dəstəkləyən Expo Go istifadə et; cihazında uyğun Expo Go yoxdursa development build lazımdır. SDK-nı təkcə `expo` versiyasını dəyişərək yüksəltmə; native paketləri də uyğunlaşdırmaq lazımdır.
+
+### Köhnə Codespace-i yenilə
+
+İşləyən Metro terminalında Ctrl+C et, sonra:
+
+```bash
+git pull --ff-only origin main
+npm ci
+npm run tunnel -- --clear
+```
+
+Yeni QR kodunu aç. Köhnə işləyən Metro prosesinin QR kodunu istifadə etmə.
 
 ## 2. Python backend-ə bağlamaq
 
