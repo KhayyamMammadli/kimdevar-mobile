@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "KimdəVar",
+    "slug": "kimdevar",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "kimdevar",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "az.kimdevar.mobile" },
+    "android": {
+      "package": "az.kimdevar.mobile",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#5426A6"
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Sorğuna şəkil əlavə etmək üçün foto seç.",
+          "cameraPermission": "Məhsulun şəklini çəkmək üçün kameradan istifadə et.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#5426A6",
+          "image": "./assets/icon.png",
+          "imageWidth": 160
+        }
+      ]
+    ],
+    "web": { "favicon": "./assets/icon.png" }
+  }
+}

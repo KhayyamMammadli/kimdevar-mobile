@@ -1,0 +1,9 @@
+{
+  "name": "KimdəVar Expo",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "forwardPorts": [8081],
+  "postCreateCommand": "npm ci",
+  "portsAttributes": {
+    "8081": { "label": "Expo Metro", "onAutoForward": "notify" }
+  }
+}
